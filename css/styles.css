@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,400;1,500&family=Roboto:ital,wght@0,300;0,500;0,900;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(143, 143, 245);
+    display: grid;
+    grid-template-columns: 12 1fr;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 60px;
+    height:60px;
+    grid-column: 1 / 2;
+}
+
+.navbar .menu {
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu {
+    list-style: none;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #181818;
+    cursor: pointer;
+}
+.navbar .menu a :hover{
+    color: #fff;
+}
+
+.navbar .menu-bar {
+    display: none;
+}
+
+.navbar .shoppin {
+    grid-column: 11 / 12;
+} 
+
+
+/* SECTION MAIN */
+
+.hero {
+    height: 82vh;
+    background-image: url(https://imgs.search.brave.com/t8tyjGwNU6A4FrA_Eq59lLtn9Hv1XB1cyaIb0ldKqVE/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5i/UldRMnNVQjVUeEVr/ZC1ReUhDdkdBSGFF/OCZwaWQ9QXBp);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns:repeat(11 , 1fr);
+    grid-template-rows: repeat(9 , 1fr);
+    }
+
+    .hero .info-content {
+        grid-column: 7 / 10;
+        grid-row: 3 / 7;
+        color: aqua;
+    }
+
+    .hero h3 {
+        font-family: "montserrat", sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+       }
+
+       .hero h1 {
+           font-size: 5em;
+           color: rgb(143, 143, 245);
+        }
+
+        .hero p {
+            font-weight: 300;
+            font-family: "montserrat", sans-serif;
+            }
+
+
+         .hero .btn {
+             font-size: 1em;
+             background: none;
+             color: blue;
+             padding: 10px, 20px;
+             border: 1px solid rgb(143, 143, 245);
+             border-radius: 40px;
+             margin-top: 40px;
+         }  
+         
+         .hero .btn :hover {
+             background-color:rgb(45, 45, 77) ;
+         }
+
+         /* SECTION FOOTER */
+
+         .footer {
+             display: grid;
+             height: 80px;
+             align-items: center;
+             background-color: #608df8;
+             color: #181818;
+             grid-template-areas:
+             "online-couch follow-me social-network";
+         }
+
+         .footer .online-couch {
+             grid-template-areas: online-couch;
+             display: flex;
+             justify-content: center;
+             background-color: rgb(143, 143, 245);
+             padding: 30px;
+             color: #608df8;
+         }
+
+         .footer .online-couh .fa {
+             font-size:  1.5em;
+             margin-right: 15px;
+         }
+
+         .footer .follow-me {
+            grid-template-areas: follow-me;
+            text-align: center;
+                    
+        }
+
+        .footer .social-network {
+            grid-template-areas: social-network;
+            font-size: 13.em;
+            margin-right: 20px;
+        }
+
+        
+        .footer .social-network .fa {
+            margin-right: 15px;
+            color:rgb(143, 143, 245);
+        }
+
+        
+        .footer .social-network .fa:hover {
+            color: #fff;
+        }
